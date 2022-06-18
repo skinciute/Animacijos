@@ -1,0 +1,67 @@
+body {
+   background: black;
+   display: flex;
+   justify-content: center;
+}
+
+section {
+   margin: auto;
+   padding: 200px;
+}
+
+
+section .grey {
+   width: 80px;
+   height: 80px;
+   border-radius: 100px;
+   background: grey;
+   animation: down 4s infinite linear;
+}
+
+@keyframes down {
+   0% {
+      transform: rotate(0deg) translateX(200px) rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg) translateX(200px) rotate(-360deg);
+   }
+}
+
+section .red {
+   width: 80px;
+   height: 80px;
+   border-radius: 100px;
+   background: red;
+   animation: up 4s infinite linear;
+}
+
+@keyframes up {
+   0% {
+      transform: rotate(0deg) translateX(200px) rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(-360deg) translateX(200px) rotate(360deg);
+   }
+}
+
+.vl {
+   border-left: 6px solid white;
+   height: 700px;
+}
+
+section .scale {
+   width: 10px;
+   height: 10px;
+   background: black;
+   border: 1px solid darkgrey;
+}
+
+section .scale:hover {
+   transform: scale(150) rotate(360deg);
+   transition: 1.5s;
+   border-radius: 100%;
+   background: blue;
+   border: none;
+}
